@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="header-icon-facebook" viewBox="0 0 24 25">
+    <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="white"/>
+  </symbol>
+
+  <symbol id="point-icon" viewBox="0 0 6 7">
+    <circle cx="3" cy="3.5" r="3" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="h" viewBox="0 0 697 799">
+    <g clip-path="url(#clip0_22728_11332)">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M245.112 340H432.082C485.793 340 530.618 362.912 558.49 401.63C586.34 440.35 587.199 504.956 570.958 555.498L550.194 620.023C541.522 646.966 500.918 774.384 493 799H391C391 799 392.559 800.366 477.767 535.5C485.29 512.126 489.586 474.185 477.767 457.777C465.968 441.37 446.06 431.66 419.718 431.66H266.886C236.876 431.66 210.283 451.178 200.999 480.005L245.112 340Z" fill="url(#paint0_linear_22728_11332)"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M99.3445 799H-0.369385C84.4982 532.509 170.329 266.331 255.698 0H355.276C354.856 1.33198 354.431 2.6675 353.999 4.00646C215.866 429.03 262.985 285.497 99.3445 799Z" fill="#F0145A"/>
+    </g>
+    <defs>
+      <linearGradient id="paint0_linear_22728_11332" x1="521.823" y1="798.999" x2="268.503" y2="516.696" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#F0145A"/>
+        <stop offset="1" stop-color="#693264"/>
+      </linearGradient>
+      <clipPath id="clip0_22728_11332">
+        <rect width="697" height="799" fill="white"/>
+      </clipPath>
+    </defs>
+  </symbol>
+
+   <symbol id="drop-scroll" viewBox="0 0 42 42">
+    <g clip-path="url(#clip0_22728_11339)">
+      <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
+      <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_22728_11339">
+        <rect width="42" height="42" fill="white"/>
+      </clipPath>
+    </defs>
+  </symbol>
+
+
+</svg>
