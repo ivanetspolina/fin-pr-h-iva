@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: auto;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 .head-container .header {
@@ -77,6 +78,17 @@
 .head-container .header .header-content .content-info .header-content-phone-number {
   font-weight: bold;
 }
+.head-container .header .header-content .header-content-fc-icon {
+  cursor: pointer;
+}
+.head-container .header .header-content .header-content-fc-icon:hover {
+  animation: scaleUp 0.1s forwards;
+}
+@keyframes scaleUp {
+  to {
+    transform: scale(1.1);
+  }
+}
 .head-container .header .main-nav {
   display: flex;
   justify-content: flex-end;
@@ -117,4 +129,7 @@
 }
 .head-container .h-container .h-container-icon-drop:hover {
   stroke: rgb(240, 20, 90);
+}
+.head-container .drop-container {
+  margin-top: auto;
 }/*# sourceMappingURL=header.css.map */

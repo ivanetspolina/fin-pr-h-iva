@@ -1,1 +1,41 @@
 font-family: "Montserrat", sans-serif;
+
+
+
+#icon {
+    transition: all 0.3s ease;
+    fill: white;
+    cursor: pointer;
+}
+
+#icon.clicked {
+    animation: rotateAndChangeColor 0.3s forwards;
+}
+
+#icon.clicked-back {
+    animation: rotateBackAndResetColor 0.3s forwards;
+}
+
+@keyframes rotateAndChangeColor {
+    to {
+        transform: rotate(180deg);
+        fill: red;
+    }
+}
+
+@keyframes rotateBackAndResetColor {
+    to {
+        transform: rotate(0deg);
+        fill: white;
+    }
+}
+icon.addEventListener('click', function() {
+    if (!isRotated) {
+        icon.classList.remove('clicked-back');
+        icon.classList.add('clicked');
+    } else {
+        icon.classList.remove('clicked');
+        icon.classList.add('clicked-back');
+    }
+    isRotated = !isRotated;
+});

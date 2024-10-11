@@ -20,7 +20,7 @@
       color: $link-active-color;
     }
 
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }
@@ -30,7 +30,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: auto;
   background: $color-gradient-supersoft;
+
 
 
   .header {
@@ -99,26 +101,28 @@
           fill: #E6E6F0;
         }
 
-        .header-content-adress {
-          
-        }
+        .header-content-adress {}
 
 
         .header-content-phone-number {
           font-weight: bold;
         }
 
-        // .header-content-fc-icon{
-        //   svg {
-        //     fill: $color-basic-white;
-        //     transition: fill;
-        //     &:hover {
-        //       fill: $color-accent; 
-        //     }
-        //   }
-        // }
       }
 
+      .header-content-fc-icon {
+        cursor: pointer;
+      }
+
+      .header-content-fc-icon:hover {
+        animation: scaleUp 0.1s forwards;
+      }
+
+      @keyframes scaleUp {
+        to {
+          transform: scale(1.1);
+        }
+      }
 
     }
 
@@ -169,14 +173,15 @@
       cursor: pointer;
       z-index: 3;
 
-
       &:hover {
         stroke: $color-accent;
       }
     }
 
+
   }
 
   .drop-container {
+    margin-top: auto;
   }
 }
