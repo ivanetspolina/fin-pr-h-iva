@@ -1,23 +1,30 @@
 @import "../colors/colors.scss";
 
 
-@mixin header-style($bg-color, $text-color, $link-active-color, $link-hover-color) {
-  background-color: $bg-color;
-  color: $text-color;
+@mixin header_style($bg_color, $text_color, $link_active_color, $link_hover_color) {
+  background-color: $bg_color;
+  color: $text_color;
 
-  .main-nav-link {
-    color: $text-color;
+  .main_nav_link {
+    color: $text_color;
     font-size: 16px;
     font-weight: 700;
     line-height: 19.5px;
     margin-right: 15px;
+    position: relative;
 
-    &:hover {
-      color: $link-hover-color;
+    &:hover::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 100%;
+      width: fit-content;
+      height: 2px;
+      background: $text_color;
     }
 
-    &.active {
-      color: $link-active-color;
+    &:active {
+      color: $link_active_color;
     }
 
     &:last-child {
@@ -26,19 +33,22 @@
   }
 }
 
-.head-container {
+.head_container {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
-  background: $color-gradient-supersoft;
-
-
+  background: $color_gradient_supersoft;
+  border-radius: 0 0 12px 12px;
+  box-shadow:
+    0 10px 20px 1px rgba(202, 202, 219, 1),
+    0 20px 30px 1px rgba(231, 231, 242, 1);
 
   .header {
     display: flex;
     width: 100%;
     position: fixed;
+    z-index: 10;
     justify-content: space-between;
     align-items: center;
     padding: 50px 60px 0px 60px;
@@ -48,27 +58,27 @@
     // }
 
     &.dark {
-      @include header-style($color-main-regular, $color-basic-white, $color-accent, $color-accent);
+      @include header_style($color_main_regular, $color_basic_white, $color_accent, $color_accent);
     }
 
     .logo {
       margin-bottom: 6px;
     }
 
-    .header-content {
+    .header_content {
       display: flex;
       flex-direction: column;
       row-gap: 16px;
 
-      .header-content-lang-info {
+      .header_content_lang_info {
         display: inline-flex;
         justify-content: center;
         align-items: center;
 
-        .header-content-lang {
+        .header_content_lang {
           display: inline-flex;
 
-          .content-lang-btn {
+          .content_lang_btn {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -83,38 +93,47 @@
           }
 
 
-          .content-lang-btn:hover,
-          .content-lang-btn:focus-visible {
-            background-color: $color-accent;
+          .content_lang_btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+          }
+
+          .content_lang_btn:focus-visible {
+            background-color: $color_accent;
           }
 
         }
       }
 
-      .content-info {
+      .content_info {
         display: flex;
         align-items: center;
 
-        .point-icon {
+        .point_icon {
           margin-left: 6px;
           margin-right: 6px;
           fill: #E6E6F0;
         }
 
-        .header-content-adress {}
+        .header_content_adress {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19.5px;
+        }
 
 
-        .header-content-phone-number {
-          font-weight: bold;
+        .header_content_phone_number {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 19.5px;
         }
 
       }
 
-      .header-content-fc-icon {
+      .header_content_fc_icon {
         cursor: pointer;
       }
 
-      .header-content-fc-icon:hover {
+      .header_content_fc_icon:hover {
         animation: scaleUp 0.1s forwards;
       }
 
@@ -126,62 +145,21 @@
 
     }
 
-    .main-nav {
+    .main_nav {
       display: flex;
       justify-content: flex-end;
-
-      .main-nav-link {
-
-        &:hover {
-          border-bottom-color: $color-accent;
-        }
-
-        &.active {
-          color: $color-accent;
-          border-bottom-color: $color-accent;
-        }
-      }
-    }
-  }
-
-  .h-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-
-    .h-container-icon {
       position: relative;
-    }
 
-    .h-container-text {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      text-align: center;
-      color: $color-basic-white;
-      font-size: 38px;
-      font-weight: 700;
-      line-height: 46.32px;
-    }
+      .main_nav_link {
 
-    .h-container-icon-drop {
-      margin-top: -73px;
-      cursor: pointer;
-      z-index: 3;
 
-      &:hover {
-        stroke: $color-accent;
+        &:hover {}
+
+        &:focus-visible {
+          color: $color_accent;
+          // border-bottom-color: $color_accent;
+        }
       }
     }
-
-
-  }
-
-  .drop-container {
-    margin-top: auto;
   }
 }

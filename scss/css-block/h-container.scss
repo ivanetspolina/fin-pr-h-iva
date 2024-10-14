@@ -1,0 +1,39 @@
+@import "../colors/colors.scss";
+
+.h_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    .h_container_icon {
+      position: relative;
+      z-index: 11;
+    }
+
+    .h_container_text {
+      position: absolute;
+      margin-top: 75px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 12;
+      text-align: center;
+      color: $color_basic_white;
+    }
+
+    .h_container_icon_drop {
+      margin-top: -73px;
+      cursor: pointer;
+      z-index: 13;
+      color: white;
+  
+      &:hover {
+        color: $color_accent;
+      }
+    }
+  }  
+
+  
+  

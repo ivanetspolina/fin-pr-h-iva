@@ -1,0 +1,30 @@
+.h_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.h_container .h_container_icon {
+  position: relative;
+  z-index: 11;
+}
+.h_container .h_container_text {
+  position: absolute;
+  margin-top: 75px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 12;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.h_container .h_container_icon_drop {
+  margin-top: -73px;
+  cursor: pointer;
+  z-index: 13;
+  color: white;
+}
+.h_container .h_container_icon_drop:hover {
+  color: rgb(240, 20, 90);
+}/*# sourceMappingURL=h-container.css.map */

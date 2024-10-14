@@ -1,7 +1,59 @@
-@import "../colors/colors.scss";
+@import "./colors/colors.scss";
 
-.head-container{
+.head-container {
     width: 100%;
-    height: 1000px;
+    // height: 1000px;
     background-color: $color-gradient-supersoft;
+}
+
+.link {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.07px;
+    color: $color_active_regular;
+    text-transform: uppercase;
+}
+
+.fonts_hero {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46.32px;
+}
+
+.fonts_h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.57px;
+}
+
+.fonts_h3{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.82px;
+}
+
+.fonts_h3_caps{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.07px;
+}
+
+.fonts_h4{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+}
+
+.paragraph{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.unordered_ordered_list{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 15px;
 }

@@ -1,0 +1,121 @@
+.head-container {
+  width: 100%;
+  background-color: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.07px;
+  color: rgb(36, 163, 255);
+  text-transform: uppercase;
+}
+
+.fonts_hero {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46.32px;
+}
+
+.fonts_h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.57px;
+}
+
+.fonts_h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.82px;
+}
+
+.fonts_h3_caps {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.07px;
+}
+
+.fonts_h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+}
+
+.paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.unordered_ordered_list {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.team_container {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.team_container .team_item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 0 60px 46px 60px;
+}
+.team_container .team_item .team_item_img {
+  height: 344px;
+  width: 400px;
+  border-radius: 12px 0 0 12px;
+}
+.team_container .team_item .team_item_content {
+  flex: 1;
+  padding: 30px;
+  background-color: rgb(245, 245, 250);
+}
+.team_container .team_item .team_item_content .team_item_link {
+  color: rgb(36, 163, 255);
+}
+.team_container .team_item .team_item_content .team_item_link .team_item_svg {
+  margin-left: 2px;
+}
+.team_container .team_item .team_item_content .team_item_text {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.team_container .team_item .team_item_content .team_item_name {
+  display: block;
+  color: rgb(179, 179, 186);
+  margin-bottom: 6px;
+}
+.team_container .team_item .team_item_content .team_item_position {
+  color: rgb(179, 179, 186);
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}/*# sourceMappingURL=team-container.css.map */

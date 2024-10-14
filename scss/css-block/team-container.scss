@@ -1,0 +1,78 @@
+@import "../colors/colors.scss";
+@import "../index.scss";
+
+.team_container {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    .team_item {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: fit-content;
+        padding: 0 60px 46px 60px;
+
+
+        .team_item_img {
+            height: 344px;
+            width: 400px;
+            border-radius: 12px 0 0 12px;
+        }
+
+        .team_item_content {
+            flex: 1;
+            padding: 30px;
+            background-color: rgba(245, 245, 250, 1);
+
+            .team_item_link {
+                color: $color_active_regular;
+
+                .team_item_svg {
+                    margin-left: 2px;
+
+                }
+            }
+
+            .team_item_text {
+                background: $color_gradient_red_text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-top: 5px;
+                margin-bottom: 30px;
+            }
+
+            .team_item_name {
+                display: block;
+                color: $color_grey_text;
+                margin-bottom: 6px;
+            }
+
+            .team_item_position {
+                color: $color_grey_text;
+            }
+        }
+    }
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.slick-list {
+    overflow: hidden;
+
+}
+
+.slick-track {
+    display: flex;
+
+}
