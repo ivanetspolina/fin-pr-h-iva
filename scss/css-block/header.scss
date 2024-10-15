@@ -58,7 +58,7 @@
   }
 
   .header_content_fc_icon {
-    fill: $text_color;
+    color: $text_color;
   }
 }
 
@@ -153,7 +153,7 @@
 
     .header_content_fc_icon:hover {
       animation: scaleUp 0.1s forwards;
-      fill: $color_accent;
+      color: $color_accent;
     }
 
     @keyframes scaleUp {

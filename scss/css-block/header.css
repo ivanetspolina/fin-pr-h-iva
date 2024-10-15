@@ -186,7 +186,7 @@
   background-color: rgb(240, 20, 90);
 }
 .header.light .header_content_fc_icon {
-  fill: rgb(179, 179, 186);
+  color: rgb(179, 179, 186);
 }
 .header.dark {
   background-color: rgb(50, 50, 100);
@@ -233,7 +233,7 @@
   background-color: rgb(240, 20, 90);
 }
 .header.dark .header_content_fc_icon {
-  fill: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 .header .logo {
   margin-bottom: 10px;
@@ -283,7 +283,7 @@
 }
 .header .header_content .header_content_fc_icon:hover {
   animation: scaleUp 0.1s forwards;
-  fill: rgb(240, 20, 90);
+  color: rgb(240, 20, 90);
 }
 @keyframes scaleUp {
   to {
