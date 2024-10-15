@@ -7,14 +7,11 @@
   color: $text_color;
 
   .main_nav_link {
-    color: $text_color;
+    color: $link_hover_color;
     margin-right: 15px;
     position: relative;
 
     &:hover::after {
-      color: $link_hover_color;
-
-
       content: "";
       display: block;
       position: absolute;
@@ -45,6 +42,24 @@
       margin-right: 0;
     }
   }
+
+  .content_lang_btn {
+    background-color: transparent;
+    color: $text_color;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &:active {
+      color: $color_basic_white;
+      background-color: $color_accent;
+    }
+  }
+
+  .header_content_fc_icon {
+    fill: $text_color;
+  }
 }
 
 .head_container {
@@ -57,113 +72,102 @@
   box-shadow:
     0 10px 20px 1px rgba(202, 202, 219, 1),
     0 20px 30px 1px rgba(231, 231, 242, 1);
+}
 
-  .header {
+.header {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 60px 0px 60px;
+
+  &.light {
+    @include header-style($color_basic_white, $color_grey_text, $color_accent, $color_active_regular);
+  }
+
+  &.dark {
+    @include header_style($color_main_regular, $color_basic_white, $color_accent, $color_basic_white);
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .header_content {
     display: flex;
-    width: 100%;
-    height: fit-content;
-    position: fixed;
-    z-index: 10;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 60px 0px 60px;
+    flex-direction: column;
+    row-gap: 16px;
 
-    // &.light {
-    //   @include header-style($color-basic-white, $color-grey-text, $color-accent, $color-active-regular);
-    // }
+    .header_content_lang_info {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
 
-    &.dark {
-      @include header_style($color_main_regular, $color_basic_white, $color_accent, $color_basic_white);
-    }
-
-    .logo {
-      margin-bottom: 10px;
-    }
-
-    .header_content {
-      display: flex;
-      flex-direction: column;
-      row-gap: 16px;
-
-      .header_content_lang_info {
+      .header_content_lang {
         display: inline-flex;
-        justify-content: center;
-        align-items: center;
 
-        .header_content_lang {
-          display: inline-flex;
-
-          .content_lang_btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 25px;
-            width: 33px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 14.63px;
-            text-transform: uppercase;
-            background-color: transparent;
-            color: $color_basic_white;
-          }
-
-
-          .content_lang_btn:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-          }
-
-          .content_lang_btn:active {
-            background-color: $color_accent;
-          }
-
+        .content_lang_btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 25px;
+          width: 33px;
+          border-radius: 8px;
+          cursor: pointer;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 14.63px;
+          text-transform: uppercase;
         }
       }
-
-      .content_info {
-        display: flex;
-        align-items: center;
-
-        .point_icon {
-          margin-left: 6px;
-          margin-right: 6px;
-          fill: #E6E6F0;
-        }
-
-        .header_content_adress {
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 19.5px;
-        }
-
-
-        // .header_content_phone_number {
-        // }
-
-      }
-
-      .header_content_fc_icon {
-        cursor: pointer;
-      }
-
-      .header_content_fc_icon:hover {
-        animation: scaleUp 0.1s forwards;
-      }
-
-      @keyframes scaleUp {
-        to {
-          transform: scale(1.1);
-        }
-      }
-
     }
 
-    .main_nav {
+    .content_info {
       display: flex;
-      justify-content: flex-end;
-      position: relative;
+      align-items: center;
+
+      .point_icon {
+        margin-left: 6px;
+        margin-right: 6px;
+        fill: $color_grey_separator;
+      }
+
+      .header_content_adress {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+      }
+
+
+      // .header_content_phone_number {
+      // }
 
     }
+
+    .header_content_fc_icon {
+      cursor: pointer;
+    }
+
+    .header_content_fc_icon:hover {
+      animation: scaleUp 0.1s forwards;
+      fill: $color_accent;
+    }
+
+    @keyframes scaleUp {
+      to {
+        transform: scale(1.1);
+      }
+    }
+
+  }
+
+  .main_nav {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
   }
 }
