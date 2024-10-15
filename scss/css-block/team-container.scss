@@ -1,9 +1,8 @@
 @import "../colors/colors.scss";
-@import "../index.scss";
+@import "../fonts.scss";
 
 .team_container {
-    margin-top: 80px;
-    margin-bottom: 60px;
+    margin-top: 80px;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +31,7 @@
 
             .team_item_link {
                 color: $color_active_regular;
+               
 
                 .team_item_svg {
                     margin-left: 2px;

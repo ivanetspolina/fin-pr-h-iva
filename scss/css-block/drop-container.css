@@ -1,3 +1,55 @@
+.fonts_hero {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46.32px;
+}
+
+.fonts_h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.57px;
+}
+
+.fonts_h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.82px;
+}
+
+.fonts_h3_caps {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.07px;
+}
+
+.fonts_h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+}
+
+.paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.unordered_ordered_list {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.07px;
+  color: rgb(36, 163, 255);
+  text-transform: uppercase;
+}
+
 .drop_container {
   display: flex;
   flex-direction: column;

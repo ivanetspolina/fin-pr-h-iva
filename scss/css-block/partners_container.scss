@@ -1,1 +1,94 @@
 @import "../colors/colors.scss";
+@import "../fonts.scss";
+
+.partners_container {
+    margin-top: 60px;
+    display: grid;
+
+    .partners_container_text {
+        display: flex;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        color: $color_main_regular;
+        text-transform: uppercase;
+
+    }
+
+    .partners_container_item {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 120px;
+        border-radius: 12px;
+
+
+        .partners_item {
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            display: grid;
+            // justify-self: stretch;
+
+
+            .partners_item_img {
+                // max-width: 100%;
+                // max-height: 100%;
+                // object-fit: none;
+                // object-fit: contain;
+                place-self: center;
+                // margin: auto auto;
+            }
+
+            &.partner1 {
+                background-color: $color_partners1;
+            }
+
+            &.partner2 {
+                background-color: $color_partners2;
+            }
+
+            &.partner3 {
+                background-color: $color_partners3;
+            }
+
+            &.partner4 {
+                background-color: $color_partners4;
+            }
+
+            &.partner5 {
+                background-color: $color_partners5;
+            }
+
+            &.partner6 {
+                background-color: $color_partners6;
+            }
+
+            &.partner7 {
+                background-color: $color_partners7;
+            }
+
+            &.partner8 {
+                background-color: $color_partners8;
+            }
+
+            &.partner9 {
+                background-color: $color_partners9;
+            }
+
+            &.partner10 {
+                background-color: $color_partners10;
+            }
+
+            &.partner11 {
+                background-color: $color_partners11;
+            }
+
+            &.partner12 {
+                background-color: $color_partners12;
+            }
+
+        }
+    }
+}

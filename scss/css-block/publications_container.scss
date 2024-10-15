@@ -1,0 +1,67 @@
+@import "../colors/colors.scss";
+@import "../fonts.scss";
+
+.publications_container {
+    padding: 30px 60px 0 60px;
+    background-color: $color_grey_bg;
+
+    .publications_link {
+        .publications_svg {
+            margin-left: 2px;
+        }
+    }
+
+    .publications_title {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        background: $color_gradient_red_text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .publications_item_container {
+        display: grid;
+        column-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        height: 450px;
+
+        .publications_item {
+            border-radius: 8px;
+            background-color: $color-basic-white;
+
+            .publications_item_img {
+                // object-fit: fill;
+            }
+
+            .publications_item_content {
+                display: grid;      
+                row-gap: 15px;          
+                padding: 30px;
+
+                .publications_item_title {
+                    color: $color-active-regular;
+                }
+
+                .publications_item_data {
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 14.63px;
+                    color: $color-grey-text;
+                    text-transform: uppercase;
+                }
+
+                .publications_item_separator::after{
+                    content: "";
+                    display: block;
+                    background-color: $color_grey_separator;
+                    width: auto;
+                    height: 4px;
+                }
+
+                .publications_item_text {
+                    color: $color_basic_black;
+                }
+            }
+        }
+    }
+}
