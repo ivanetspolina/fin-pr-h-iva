@@ -12,17 +12,33 @@
     position: relative;
 
     &:hover::after {
+      color: $link_hover_color;
+
+
       content: "";
       display: block;
       position: absolute;
-      top: 100%;
-      width: fit-content;
+      width: 100%;
       height: 2px;
-      background: $text_color;
+      bottom: -3px;
+      background-color: $link_hover_color;
+
     }
 
     &:active {
       color: $link_active_color;
+    }
+
+
+    &:active::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -3px;
+      background-color: $link_active_color;
+
     }
 
     &:last-child {
@@ -35,7 +51,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
+  height: fit-content;
   background: $color_gradient_supersoft;
   border-radius: 0 0 12px 12px;
   box-shadow:
@@ -45,6 +61,7 @@
   .header {
     display: flex;
     width: 100%;
+    height: fit-content;
     position: fixed;
     z-index: 10;
     justify-content: space-between;
@@ -56,11 +73,11 @@
     // }
 
     &.dark {
-      @include header_style($color_main_regular, $color_basic_white, $color_accent, $color_accent);
+      @include header_style($color_main_regular, $color_basic_white, $color_accent, $color_basic_white);
     }
 
     .logo {
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
 
     .header_content {
@@ -88,6 +105,8 @@
             font-size: 12px;
             line-height: 14.63px;
             text-transform: uppercase;
+            background-color: transparent;
+            color: $color_basic_white;
           }
 
 
@@ -95,7 +114,7 @@
             background-color: rgba(255, 255, 255, 0.2);
           }
 
-          .content_lang_btn:focus-visible {
+          .content_lang_btn:active {
             background-color: $color_accent;
           }
 
@@ -145,16 +164,6 @@
       justify-content: flex-end;
       position: relative;
 
-      .main_nav_link {
-
-
-        &:hover {}
-
-        &:focus-visible {
-          color: $color_accent;
-          // border-bottom-color: $color_accent;
-        }
-      }
     }
   }
 }

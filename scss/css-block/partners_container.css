@@ -35,6 +35,12 @@
   margin-bottom: 20px;
 }
 
+.paragraph_small {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
 .unordered_ordered_list {
   font-size: 18px;
   font-weight: 400;

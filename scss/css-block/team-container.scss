@@ -9,13 +9,16 @@
     justify-content: space-between;
 
     .team_item {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        // display: flex;
+        // align-items: center;
+        // flex-direction: row;
+        // flex-wrap: nowrap;
         width: 100%;
-        max-width: fit-content;
+        // max-width: fit-content;
         padding: 0 60px 46px 60px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto 1fr;
 
 
         .team_item_img {
@@ -25,7 +28,6 @@
         }
 
         .team_item_content {
-            flex: 1;
             padding: 30px;
             background-color: rgba(245, 245, 250, 1);
 
