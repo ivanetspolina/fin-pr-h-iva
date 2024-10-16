@@ -56,6 +56,13 @@
   text-transform: uppercase;
 }
 
+.text_page_about {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
 .fonts_hero {
   font-size: 38px;
   font-weight: 700;
@@ -112,6 +119,13 @@
   line-height: 17.07px;
   color: rgb(36, 163, 255);
   text-transform: uppercase;
+}
+
+.text_page_about {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 
 .head-container {
@@ -179,7 +193,7 @@
   color: rgb(179, 179, 186);
 }
 .header.light .content_lang_btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(245, 245, 250);
 }
 .header.light .content_lang_btn:active {
   color: rgb(255, 255, 255);

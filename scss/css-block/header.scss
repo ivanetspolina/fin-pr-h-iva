@@ -2,7 +2,7 @@
 @import "../fonts.scss";
 @import "../index.scss";
 
-@mixin header_style($bg_color, $text_color, $link_active_color, $link_hover_color) {
+@mixin header_style($bg_color, $text_color, $link_active_color, $link_hover_color, $btn_hover_color) {
   background-color: $bg_color;
   color: $text_color;
 
@@ -48,7 +48,7 @@
     color: $text_color;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color:  $btn_hover_color;
     }
 
     &:active {
@@ -85,11 +85,11 @@
   padding: 50px 60px 0px 60px;
 
   &.light {
-    @include header-style($color_basic_white, $color_grey_text, $color_accent, $color_active_regular);
+    @include header-style($color_basic_white, $color_grey_text, $color_accent, $color_active_regular, $color_grey_bg);
   }
 
   &.dark {
-    @include header_style($color_main_regular, $color_basic_white, $color_accent, $color_basic_white);
+    @include header_style($color_main_regular, $color_basic_white, $color_accent, $color_basic_white, $color_hover_head_btn1);
   }
 
   .logo {

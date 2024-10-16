@@ -56,15 +56,30 @@
   text-transform: uppercase;
 }
 
-.about_quality {
-  padding: 60px 280px;
+.text_page_about {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
-.about_quality .about_quality_title {
-  margin-bottom: 10px;
+
+.quality_container {
+  display: flex;
+  padding: 60px 180px;
+}
+.quality_container .quality_text {
+  margin-right: 60px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.quality_container .quality_text .about_quality_text {
+  color: rgb(0, 0, 0);
+}
+.quality_container .about_quality_title {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.about_quality .about_quality_title:last-child {
+.quality_container .about_quality_title:last-child {
   margin-bottom: 0;
 }/*# sourceMappingURL=about-quality.css.map */

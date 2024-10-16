@@ -1,0 +1,87 @@
+@import "../colors/colors.scss";
+@import "../fonts.scss";
+
+.achievements_container {
+    width: 100%;
+    background-color: $color_grey_bg;
+    padding: 30px 160px;
+
+    .achievements_container_title {
+        display: flex;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: $color_main_regular;
+        margin-bottom: 30px;
+    }
+
+    .achievements_container_item {
+        display: inline-flex;
+        width: 100%; 
+        flex-wrap: nowrap;
+
+        .achievements_item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110px;
+            width: 300px !important;
+            background-color: $color_basic_white;
+            border-radius: 12px;
+            margin-right: 40px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .achievements_item_img {
+                display: flex;
+            }
+        }
+    }
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-list {
+    overflow: hidden;
+
+}
+
+.slick-track {
+    display: flex;
+
+}
+
+.slick-dots {
+    list-style: none !important; 
+    margin-bottom: -30px;
+}
+
+.slick-dots li button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: none;
+    background-color: $color_active_regular;
+    opacity: 0.2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+    background-color: $color_active_regular; 
+    opacity: 1;
+}
+
+.slick-dots li button::before {
+    display: none;
+    margin: 0;
+    padding: 0;
+}

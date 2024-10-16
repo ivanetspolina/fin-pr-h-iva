@@ -4,9 +4,9 @@
 .team_container {
     margin-top: 80px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
+    // justify-content: center;
+    // align-items: center;
+    // justify-content: space-between;
 
 
     .team_item {
@@ -65,7 +65,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 15px;
 }
 
 .slick-list {
@@ -76,4 +75,30 @@
 .slick-track {
     display: flex;
 
+}
+
+.slick-dots {
+    list-style: none !important;     
+    margin-bottom: 22px;
+}
+
+.slick-dots li button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: none;
+    background-color: $color_active_regular;
+    opacity: 0.2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+    background-color: $color_active_regular; 
+    opacity: 1;
+}
+
+.slick-dots li button::before {
+    display: none;
 }
