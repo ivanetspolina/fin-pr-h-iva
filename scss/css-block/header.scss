@@ -96,10 +96,30 @@
     margin-bottom: 10px;
   }
 
+.main_nav_home_link{
+  display: flex;
+  align-items: flex-start;
+
+  .main_nav_home_link_slash{
+    margin-right: 4px;
+    margin-left: 4px;
+    fill: $color_accent;
+  }
+  .main_nav_home_link_about{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.88px;
+    color: $color_main_regular;
+  }
+}
+
   .header_content {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+    z-index: 12;
+   
+    position: relative;
 
     .header_content_lang_info {
       display: inline-flex;
@@ -107,7 +127,7 @@
       align-items: center;
 
       .header_content_lang {
-        display: inline-flex;
+        display: inline-flex;        
 
         .content_lang_btn {
           display: flex;
@@ -140,11 +160,6 @@
         font-weight: 400;
         line-height: 19.5px;
       }
-
-
-      // .header_content_phone_number {
-      // }
-
     }
 
     .header_content_fc_icon {
@@ -161,7 +176,6 @@
         transform: scale(1.1);
       }
     }
-
   }
 
   .main_nav {

@@ -1,0 +1,19 @@
+@import "../colors/colors.scss";
+@import "../fonts.scss";
+
+.about_quality {
+    padding: 60px 280px;
+
+    .about_quality_text {}
+
+    .about_quality_title {
+        margin-bottom: 10px;
+        background: $color_gradient_red_text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

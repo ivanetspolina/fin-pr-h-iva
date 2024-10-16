@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../scss/index.css" />
     <link rel="stylesheet" href="../scss/fonts.css" />
     <link rel="stylesheet" href="../scss/css-block/header.css" />
+    <link rel="stylesheet" href="../scss/css-block/about-idia.css" />
+    <link rel="stylesheet" href="../scss/css-block//about-img.css" />
 
     <link rel="stylesheet" href="../scss/css-block/footer.css" />
   </head>
@@ -18,8 +20,10 @@
       <div class="logo">
         <a class="main_nav_home_link" href="./index.html">
           <img src="../img/Logo2.png" alt="logo" />
-          <img src="../img/Slash.png" alt="logo" />
-          <img src="../img/about_us.png" alt="logo" />
+          <svg class="main_nav_home_link_slash" width="21" height="47">
+            <use href="../img/svg/sprite.svg#slash_icon"></use>
+          </svg>
+          <span class="main_nav_home_link_about">about us</span>
         </a>
       </div>
 
@@ -67,6 +71,72 @@
       </div>
     </header>
 
+    <main class="about_main">
+      <section class="about_idia">
+        <div class="idia_introduction">
+          <h4 class="introduction_title fonts_hero">
+            We turn over the idea of legal services
+          </h4>
+          <p class="introduction_text">
+            Consolidating many years of experience and practice, the company's
+            lawyers accompany complex projects and achieve the adoption of a
+            number of decisions that are important for the industry. Many people
+            form the practice of applying the law of the sea in Ukraine.
+          </p>
+          <p class="introduction_text">
+            HLEGAL is a reliable business partner, confirmed by stable
+            cooperation with international law firms, the trust of large
+            Ukrainian and international companies, and the recognition of
+            professional ratings.
+          </p>
+        </div>
+        <div class="idia_advantages">
+          <div class="advantages_item">
+            <svg class="advantages_item_icon" width="32" height="32">
+              <use href="../img/svg/sprite.svg#advant1_icon"></use>
+            </svg>
+            <p class="advantages_item_numb">10+</p>
+            <p class="advantages_item_text">years of relevant experience</p>
+          </div>
+          <div class="advantages_item">
+            <svg class="advantages_item_icon" width="32" height="32">
+              <use href="../img/svg/sprite.svg#advant2_icon"></use>
+            </svg>
+            <p class="advantages_item_numb">30+</p>
+            <p class="advantages_item_text">
+              active clients who entrust us with their orders on a monthly basis
+            </p>
+          </div>
+          <div class="advantages_item">
+            <svg class="advantages_item_icon" width="32" height="32">
+              <use href="../img/svg/sprite.svg#advant3_icon"></use>
+            </svg>
+            <p class="advantages_item_numb">500+</p>
+            <p class="advantages_item_text">hours of pro bono work annually</p>
+          </div>
+        </div>
+      </section>
+      <section class="about_img">
+        <img class="about_img_img" src="../img/Photo.png" alt="photo" />
+      </section>
+
+      <section class="about_quality">
+        <p class="about_quality_text">
+          The historically unchanged legal profession has begun to reformat in
+          recent years. Clients are feeling this, but law firms are still
+          resisting evolution. Clients need convenience, simplicity, transparent
+          payment. Google, IBM WatsOn, Symantec Clearwell prove that the
+          technological revolution in legal services has begun and is imminent.
+        </p>
+        <p class="about_quality_text">Quality is what we care about the most.</p>
+        <p class="about_quality_text">
+          It's simple. If you are unhappy with our work, we will refund your
+          money. We trust our clients. And we want our clients to trust us too.
+        </p>
+        <h4 class="about_quality_title fonts_hero">Quality is what we care about the most.</h4>
+      </section>
+    </main>
+
     <footer class="footer">
       <span class="footer_separator"></span>
       <div class="footer_content">
@@ -83,7 +153,7 @@
           <div class="footer_content2">
             <a href="#" class="footer_left_fc_icon"
               ><svg width="38" height="38">
-                <use href="../img/svg/sprite.svg#facebook_footer"></use>
+                <use href="../img/svg/sprite.svg#facebook_footer_icon"></use>
               </svg>
             </a>
 

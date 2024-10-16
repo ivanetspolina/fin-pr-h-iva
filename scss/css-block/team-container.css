@@ -64,14 +64,16 @@
   justify-content: space-between;
 }
 .team_container .team_item {
+  align-items: stretch;
+  display: flex;
   width: 100%;
   padding: 0 60px 46px 60px;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto 1fr;
 }
-.team_container .team_item .team_item_img {
-  height: 344px;
+.team_container .team_item .team_item_img_div {
+  display: flex;
+}
+.team_container .team_item .team_item_img_div .team_item_img {
+  height: 100%;
   width: 400px;
   border-radius: 12px 0 0 12px;
 }

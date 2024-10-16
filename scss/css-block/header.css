@@ -238,10 +238,27 @@
 .header .logo {
   margin-bottom: 10px;
 }
+.header .main_nav_home_link {
+  display: flex;
+  align-items: flex-start;
+}
+.header .main_nav_home_link .main_nav_home_link_slash {
+  margin-right: 4px;
+  margin-left: 4px;
+  fill: rgb(240, 20, 90);
+}
+.header .main_nav_home_link .main_nav_home_link_about {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.88px;
+  color: rgb(50, 50, 100);
+}
 .header .header_content {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  z-index: 12;
+  position: relative;
 }
 .header .header_content .header_content_lang_info {
   display: inline-flex;

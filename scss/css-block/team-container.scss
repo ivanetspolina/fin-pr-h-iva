@@ -2,30 +2,31 @@
 @import "../fonts.scss";
 
 .team_container {
-    margin-top: 80px;    
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
 
+
     .team_item {
-        // display: flex;
-        // align-items: center;
-        // flex-direction: row;
-        // flex-wrap: nowrap;
+        align-items: stretch;
+        display: flex;
         width: 100%;
-        // max-width: fit-content;
+        // height: fit-content;
         padding: 0 60px 46px 60px;
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: auto 1fr;
 
+        .team_item_img_div {
+            display: flex;
 
-        .team_item_img {
-            height: 344px;
-            width: 400px;
-            border-radius: 12px 0 0 12px;
+            .team_item_img {
+                height: 100%;
+                width: 400px;
+                border-radius: 12px 0 0 12px;
+                // object-fit: contain;
+            }
         }
+
 
         .team_item_content {
             padding: 30px;
@@ -33,11 +34,9 @@
 
             .team_item_link {
                 color: $color_active_regular;
-               
 
                 .team_item_svg {
                     margin-left: 2px;
-
                 }
             }
 
