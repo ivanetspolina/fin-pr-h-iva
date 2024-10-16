@@ -138,6 +138,11 @@
   cursor: pointer;
 }
 
+.slick-dots li button:hover {
+  background-color: rgb(0, 133, 255);
+  opacity: 0.6;
+}
+
 .slick-dots li.slick-active button {
   background-color: rgb(36, 163, 255);
   opacity: 1;

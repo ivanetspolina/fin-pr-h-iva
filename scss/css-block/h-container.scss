@@ -11,7 +11,7 @@
 
     .h_container_icon {
       position: relative;
-      z-index: 11;
+      z-index: 2;
     }
 
     .h_container_text {
@@ -19,7 +19,7 @@
       margin-top: 75px;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 12;
+      z-index: 3;
       text-align: center;
       color: $color_basic_white;
     }
@@ -27,7 +27,7 @@
     .h_container_icon_drop {
       margin-top: -73px;
       cursor: pointer;
-      z-index: 13;
+      z-index: 3;
       color: white;
   
       &:hover {

@@ -75,6 +75,12 @@
     cursor: pointer;
 }
 
+.slick-dots li button:hover {
+    background-color: $color_active_hover; 
+    opacity: 0.6;
+}
+
+
 .slick-dots li.slick-active button {
     background-color: $color_active_regular; 
     opacity: 1;
