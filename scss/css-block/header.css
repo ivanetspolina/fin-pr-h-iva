@@ -322,6 +322,10 @@
   position: relative;
 }
 
+.navbar-toggler {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .header {
     position: relative;

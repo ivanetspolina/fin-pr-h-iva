@@ -136,24 +136,35 @@
     display: flex;
     flex-direction: column;
   }
-  .idia_introduction {
+  .idia_container .idia_introduction {
     margin-right: 0;
   }
-  .idia_advantages {
+  .idia_container .idia_advantages {
     width: 100%;
     padding: 30px 60px 60px 60px;
   }
 }
 @media (max-width: 375px) {
-  .about_main {
-    width: 100%;
-  }
-  .idia_introduction {
-    margin-right: 0;
+  .header, .about_main, .idia_container {
+    max-width: 100%;
   }
   .idia_container {
-    padding: 30px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 30px;
+    margin: 0;
+  }
+  .idia_container .idia_introduction {
+    margin-right: 0;
+  }
+  .idia_container .idia_advantages {
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 34px;
+  }
+  .idia_advantages {
+    width: 100%;
+    padding: 0;
   }
 }/*# sourceMappingURL=about-idia.css.map */
