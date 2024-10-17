@@ -128,11 +128,6 @@
   margin-bottom: 20px;
 }
 
-.head-container {
-  width: 100%;
-  background-color: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-}
-
 .head_container {
   display: flex;
   flex-direction: column;
@@ -325,4 +320,34 @@
   display: flex;
   justify-content: flex-end;
   position: relative;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    position: relative;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+    padding-left: 54px;
+    padding-top: 51px;
+  }
+  .header .header_content_lang_info {
+    position: relative;
+    order: 1;
+  }
+  .header .logo {
+    position: absolute;
+    top: 103px;
+    order: 3;
+  }
+  .header .main_nav {
+    order: 2;
+    justify-content: flex-start;
+    margin-top: 100px;
+  }
 }/*# sourceMappingURL=header.css.map */

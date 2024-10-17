@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../scss/index.css" />
     <link rel="stylesheet" href="../scss/fonts.css" />
     <link rel="stylesheet" href="../scss/css-block/h-container.css" />
-    <link rel="stylesheet" href="../scss/css-block/header.css" />    
+    <link rel="stylesheet" href="../scss/css-block/header.css" />
     <link rel="stylesheet" href="../scss/css-block/drop-container.css" />
     <link rel="stylesheet" href="../scss/css-block/servives.css" />
     <link rel="stylesheet" href="../scss/css-block/team-container.css" />
@@ -80,9 +80,12 @@
         <svg class="h_container_icon" width="697" height="799">
           <use href="../img/svg/sprite.svg#h"></use>
         </svg>
-        <span class="h_container_text fonts_hero"
-          >you legal solutions provider</span
-        >
+        <span class="h_container_text fonts_hero">
+          you legal solutions provider
+        </span>        
+      </section>
+
+      <section class="drop_container">
         <svg
           class="h_container_icon_drop"
           width="42"
@@ -91,9 +94,6 @@
         >
           <use href="../img/svg/sprite.svg#drop_scroll_icon"></use>
         </svg>
-      </section>
-
-      <section class="drop_container">
         <div class="container_info_nav">
           <div class="info_nav_after">
             <nav class="info_nav">
@@ -139,9 +139,11 @@
           <div class="container2">
             <div class="serv_item_conteiner">
               <div class="serv_item">
-                <svg class="serv_item_icon">
-                  <use href="../img/svg/sprite.svg#ecommerce_icon"></use>
-                </svg>
+                <div class="serv_item_icon">
+                  <svg width="64" height="64">
+                    <use href="../img/svg/sprite.svg#ecommerce_icon"></use>
+                  </svg>
+                </div>                
                 <p class="serv_item_title fonts_h3">IT and e-commerce</p>
                 <span class="serv_item_text paragraph">
                   An endless stream of contracts, tax issues, labor relations,
@@ -152,9 +154,11 @@
               </div>
 
               <div class="serv_item">
-                <svg class="serv_item_icon">
+                <div class="serv_item_icon">
+                <svg width="64" height="64">
                   <use href="../img/svg/sprite.svg#support_icon"></use>
                 </svg>
+              </div>
                 <p class="serv_item_title fonts_h3">
                   Comprehensive daily<br />
                   legal support
@@ -168,9 +172,11 @@
               </div>
 
               <div class="serv_item">
-                <svg class="serv_item_icon">
+                <div class="serv_item_icon">
+                <svg width="64" height="64">
                   <use href="../img/svg/sprite.svg#corporate_icon"></use>
                 </svg>
+              </div>
                 <p class="serv_item_title fonts_h3">
                   Structuring corporate relationships
                 </p>
@@ -182,9 +188,11 @@
               </div>
 
               <div class="serv_item">
-                <svg class="serv_item_icon">
+                <div class="serv_item_icon">
+                <svg width="64" height="64">
                   <use href="../img/svg/sprite.svg#trust_icon"></use>
                 </svg>
+              </div>
                 <p class="serv_item_title fonts_h3">
                   Building contractual relations
                 </p>
@@ -197,9 +205,11 @@
               </div>
 
               <div class="serv_item">
-                <svg class="serv_item_icon">
+                <div class="serv_item_icon">
+                <svg width="64" height="64">
                   <use href="../img/svg/sprite.svg#protection_icon"></use>
                 </svg>
+              </div>
                 <p class="serv_item_title fonts_h3">
                   Protection of business, intellectual property
                 </p>
@@ -212,9 +222,11 @@
               </div>
 
               <div class="serv_item">
-                <svg class="serv_item_icon">
+                <div class="serv_item_icon">
+                <svg width="64" height="64">
                   <use href="../img/svg/sprite.svg#court_icon"></use>
                 </svg>
+              </div>
                 <p class="serv_item_title fonts_h3">Judicial representation</p>
                 <span class="serv_item_text paragraph">
                   Is it a small, medium-sized company or a market leader? Local
@@ -430,7 +442,11 @@
               alt="publications_item_img"
             />
             <div class="publications_item_content">
-              <p class="publications_item_title fonts_h4">Equity associate</p>
+              <a href="#"
+                ><p class="publications_item_title fonts_h4">
+                  Equity associate
+                </p>
+              </a>
               <span class="publications_item_data">April 22</span>
               <span class="publications_item_separator"></span>
               <p class="publications_item_text">
@@ -446,10 +462,12 @@
               alt="publications_item_img"
             />
             <div class="publications_item_content">
-              <p class="publications_item_title fonts_h4">
-                Penalty for the Good Corporation: what will happen to Google and
-                others for violating the GDPR
-              </p>
+              <a href="#"
+                ><p class="publications_item_title fonts_h4">
+                  Penalty for the Good Corporation: what will happen to Google
+                  and others for violating the GDPR
+                </p>
+              </a>
               <span class="publications_item_data">September 29</span>
               <span class="publications_item_separator"></span>
               <p class="publications_item_text">
@@ -466,9 +484,11 @@
               alt="publications_item_img"
             />
             <div class="publications_item_content">
-              <p class="publications_item_title fonts_h4">
-                Millennial Testament
-              </p>
+              <a href="#"
+                ><p class="publications_item_title fonts_h4">
+                  Millennial Testament
+                </p>
+              </a>
               <span class="publications_item_data">August 19</span>
               <span class="publications_item_separator"></span>
               <p class="publications_item_text paragraph_small">
@@ -540,7 +560,7 @@
           adaptiveHeight: true,
           autoplay: false,
           infinite: false,
-          arrows: true,
+          arrows: false,
           dots: true,
           responsive: [
             {

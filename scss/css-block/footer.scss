@@ -13,7 +13,7 @@
         content: "";
         display: block;
         background-color: $color_grey_separator;
-        width: auto;
+        width: 100%;
         height: 2px;
     }
 
@@ -78,4 +78,36 @@
         }
     }
 
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 19px 60px 30px 60px;
+        height: auto;
+    }
+
+    .footer_content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        justify-content: center;
+        padding-left: 123px;
+    }
+
+    .footer_right {
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        
+    }
+
+    .footer_left {
+        grid-row: 1;
+    }
+}
+
+@media (max-width: 375px) {
+  
 }

@@ -66,6 +66,18 @@
 .drop_container {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.drop_container .h_container_icon_drop {
+  position: absolute;
+  top: -72px;
+  right: 739px;
+  cursor: pointer;
+  z-index: 3;
+  color: white;
+}
+.drop_container .h_container_icon_drop:hover {
+  color: rgb(240, 20, 90);
 }
 .drop_container .container_info_nav {
   width: 100%;

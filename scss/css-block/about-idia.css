@@ -68,7 +68,7 @@
   padding: 176px 180px 60px 180px;
 }
 .idia_container .idia_introduction {
-  margin-right: 64px;
+  margin-right: 60px;
 }
 .idia_container .idia_introduction .introduction_title {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
@@ -120,4 +120,40 @@
   width: 4px;
   height: 322px;
   background: rgb(230, 230, 240);
+}
+
+@media (max-width: 1024px) {
+  .idia_container {
+    padding: 60px;
+  }
+  .idia_advantages {
+    width: 142%;
+  }
+}
+@media (max-width: 768px) {
+  .idia_container {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .idia_introduction {
+    margin-right: 0;
+  }
+  .idia_advantages {
+    width: 100%;
+    padding: 30px 60px 60px 60px;
+  }
+}
+@media (max-width: 375px) {
+  .about_main {
+    width: 100%;
+  }
+  .idia_introduction {
+    margin-right: 0;
+  }
+  .idia_container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=about-idia.css.map */

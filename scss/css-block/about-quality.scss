@@ -15,8 +15,6 @@
         }
     }
 
-    
-
     .about_quality_title {
         background: $color_gradient_red_text;
         -webkit-background-clip: text;
@@ -27,4 +25,28 @@
             margin-bottom: 0;
         }
     }
+}
+
+@media (max-width: 1024px) {
+    .quality_container {
+        padding: 60px;
+    }
+    .about_quality_title{
+        width: 71%;
+    }
+}
+
+@media (max-width: 768px){
+    .quality_container {
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about_quality_title{
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+  
 }

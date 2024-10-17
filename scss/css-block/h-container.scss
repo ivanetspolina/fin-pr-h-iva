@@ -8,6 +8,8 @@
     justify-content: center;
     align-items: center;
     height: auto;   
+    pointer-events: none;
+    position: relative;
 
     .h_container_icon {
       position: relative;
@@ -24,16 +26,7 @@
       color: $color_basic_white;
     }
 
-    .h_container_icon_drop {
-      margin-top: -73px;
-      cursor: pointer;
-      z-index: 3;
-      color: white;
-  
-      &:hover {
-        color: $color_accent;
-      }
-    }
+    
   }  
 
   

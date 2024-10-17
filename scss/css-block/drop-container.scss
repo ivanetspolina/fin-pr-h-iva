@@ -4,6 +4,20 @@
 .drop_container {
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  .h_container_icon_drop {
+    position: absolute;
+    top: -72px;
+    right: 739px;
+    cursor: pointer;
+    z-index: 3;
+    color: white;
+
+    &:hover {
+      color: $color_accent;
+    }
+  }
 
   .container_info_nav {
     width: 100%;
@@ -51,7 +65,7 @@
 
       .info_nav_link {
         color: $color_grey_text;
-        
+
 
         &:hover {
           color: $color_accent;
@@ -78,7 +92,7 @@
 
     .info_nav_text_title {
       margin-top: 27px;
-    
+
     }
 
     .info_nav_text_descr {

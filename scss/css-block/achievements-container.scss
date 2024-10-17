@@ -18,7 +18,7 @@
 
     .achievements_container_item {
         display: inline-flex;
-        width: 100%; 
+        width: 100%;
         flex-wrap: nowrap;
 
         .achievements_item {
@@ -26,7 +26,8 @@
             justify-content: center;
             align-items: center;
             height: 110px;
-            width: 300px !important;
+            // width: 300px !important;
+            width: 300px;
             background-color: $color_basic_white;
             border-radius: 12px;
             margin-right: 40px;
@@ -59,7 +60,7 @@
 }
 
 .slick-dots {
-    list-style: none !important; 
+    list-style: none !important;
     margin-bottom: -30px;
 }
 
@@ -76,13 +77,13 @@
 }
 
 .slick-dots li button:hover {
-    background-color: $color_active_hover; 
+    background-color: $color_active_hover;
     opacity: 0.6;
 }
 
 
 .slick-dots li.slick-active button {
-    background-color: $color_active_regular; 
+    background-color: $color_active_regular;
     opacity: 1;
 }
 
@@ -90,4 +91,31 @@
     display: none;
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 1024px) {
+    .achievements_container {
+        padding: 30px 60px;
+    }
+
+    .achievements_item {
+        width: 196px;
+    }
+}
+
+@media (max-width: 768px) {
+    .achievements_item {
+        height: 90px;
+        width: 132px;
+    }
+
+    .achievements_item_img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 375px) {
+  
 }

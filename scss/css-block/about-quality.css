@@ -82,4 +82,23 @@
 }
 .quality_container .about_quality_title:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .quality_container {
+    padding: 60px;
+  }
+  .about_quality_title {
+    width: 71%;
+  }
+}
+@media (max-width: 768px) {
+  .quality_container {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .about_quality_title {
+    width: 100%;
+  }
 }/*# sourceMappingURL=about-quality.css.map */
